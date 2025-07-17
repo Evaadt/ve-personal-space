@@ -4,16 +4,30 @@
     --dark-moss: #2B3E1A;
     --frosted-mint: #EFF6E8;
 
-    --sage-sand: #C4C5AF;
+    --sage-sand: #b5b1a9;
+    --tide-sand: #a39f98;
+
     --forest-green: #5A691D;
     --light-lime: #D7E987;
 
     --golden-caramel: #D4AC70;
     --dusty-ivory: #E2DDD3;
+
     --deep-bark: #371D14;
+    --deep-berk-40: #73615b;
+    --deep-berk-70: #c3bbb9;
 }
 
 
+
+html,
 body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif !important;
+    /* overflow: hidden; */
     background-color: var(--dusty-ivory);
 }

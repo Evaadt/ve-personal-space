@@ -1,11 +1,13 @@
 <header [class.shrink]="isShrunk">
-    <nav class="nav-wrapper">
-        <ul class="nav-menu">
-            <li><a routerLink="/"><i class="fa fa-home"></i> Home</a></li>
-            <li><a routerLink="/classes"><i class="fa fa-yin-yang"></i> Yoga</a></li>
-            <li><a routerLink="/publication"><i class="fa fa-book"></i> Publicações</a></li>
-            <li><a routerLink="/projects"><i class="fa fa-trophy"></i> Projetos</a></li>
-            <li><a routerLink="/about"><i class="fa fa-leaf"></i> Quem é Ve!?</a></li>
-        </ul>
-    </nav>
+    <div class="nav-wrapper">
+        <nav class="relative flex flex-column">
+            <ul>
+                <li class="nav-menu"><a routerLink="/"><i class="fa fa-home"></i> Home</a></li>
+                <li class="nav-menu"><a routerLink="/aulas"><i class="fa fa-yin-yang"></i> Yoga</a></li>
+                <li class="nav-menu"><a routerLink="/publicacoes"><i class="fa fa-book"></i> Publicações</a></li>
+                <li class="nav-menu"><a routerLink="/projetos"><i class="fa fa-trophy"></i> Projetos</a></li>
+                <li class="nav-menu"><a routerLink="/sobre"><i class="fa fa-leaf"></i> Quem é Ve!?</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
