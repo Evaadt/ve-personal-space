@@ -1,22 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --olive-green: #98A931;
-    --dark-moss: #2B3E1A;
-    --frosted-mint: #EFF6E8;
-
-    --sage-sand: #b5b1a9;
-    --tide-sand: #a39f98;
-
-    --forest-green: #5A691D;
-    --light-lime: #D7E987;
-
-    --golden-caramel: #D4AC70;
-    --dusty-ivory: #E2DDD3;
-
-    --deep-bark: #371D14;
-    --deep-berk-40: #73615b;
-    --deep-berk-70: #c3bbb9;
-}
+    --green: #98A931;             /* olive-green → green */
+    --dark-green: #2B3E1A;        /* dark-moss → dark-green */
+    --mint: #EFF6E8;              /* frosted-mint → mint */
+  
+    --sand: #b5b1a9;              /* sage-sand → sand */
+    --sand-30: #a39f98;         /* tide-sand → sand-dark */
+  
+    --forest: #5A691D;            /* forest-green → forest */
+    --lime: #D7E987;              /* light-lime → lime */
+  
+    --caramel: #D4AC70;           /* golden-caramel → caramel */
+    --ivory: #E2DDD3;             /* dusty-ivory → ivory */
+  
+    --brown: #371D14;              /* deep-bark → bark */
+    --brown-40: #73615b;          /* deep-berk-40 → brown-40 */
+    --brown-70: #c3bbb9;          /* deep-berk-70 → brown-70 */
+  }
+  
 
 
 
@@ -29,5 +30,5 @@ body {
     margin: 0;
     font-family: Poppins, sans-serif !important;
     /* overflow: hidden; */
-    background-color: var(--dusty-ivory);
+    background-color: var(--ivory);
 }

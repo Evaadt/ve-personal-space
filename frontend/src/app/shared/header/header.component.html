@@ -2,11 +2,21 @@
     <div class="nav-wrapper">
         <nav class="relative flex flex-column">
             <ul>
-                <li class="nav-menu"><a routerLink="/"><i class="fa fa-home"></i> Home</a></li>
-                <li class="nav-menu"><a routerLink="/aulas"><i class="fa fa-yin-yang"></i> Yoga</a></li>
-                <li class="nav-menu"><a routerLink="/publicacoes"><i class="fa fa-book"></i> Publicações</a></li>
-                <li class="nav-menu"><a routerLink="/projetos"><i class="fa fa-trophy"></i> Projetos</a></li>
-                <li class="nav-menu"><a routerLink="/sobre"><i class="fa fa-leaf"></i> Quem é Ve!?</a></li>
+                <li class="nav-menu" [class.active]="serverUtils.isRoute('/')">
+                    <a routerLink="/"><i class="fa fa-home"></i> Home</a>
+                </li>
+                <li class="nav-menu" [class.active]="serverUtils.isRoute('/aulas')">
+                    <a routerLink="/aulas"><i class="fa fa-yin-yang"></i> Yoga</a>
+                  </li>                  
+                <li class="nav-menu" [class.active]="serverUtils.isRoute('/publicacoes')">
+                    <a routerLink="/publicacoes"><i class="fa fa-book"></i> Publicações</a>
+                </li>
+                <li class="nav-menu" [class.active]="serverUtils.isRoute('/projetos')">
+                    <a routerLink="/projetos"><i class="fa fa-trophy"></i> Projetos</a>
+                </li>
+                <li class="nav-menu" [class.active]="serverUtils.isRoute('/sobre')">
+                    <a routerLink="/sobre"><i class="fa fa-leaf"></i> Quem é Ve!?</a>
+                </li>
             </ul>
         </nav>
     </div>

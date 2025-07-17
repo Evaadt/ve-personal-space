@@ -13,7 +13,7 @@ header.shrink {
 
 .nav-wrapper {
     height: 6rem;
-    background-color: var(--sage-sand);
+    background-color: var(--sand);
     width: 90%;
     border-radius: 0 5rem 5rem 0;
     position: relative;
@@ -33,7 +33,7 @@ header.shrink {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: var(--dusty-ivory);
+    background-color: var(--ivory);
     border-radius: 3rem;
     padding: .5rem 0.6rem;
     box-shadow: inset -1px 3px 3px -3px #3a2f1f;
@@ -45,9 +45,9 @@ header.shrink {
 li.nav-menu a {
     text-decoration: none;
     padding: 0.5rem 1rem;
-    background-color: var(--sage-sand);
+    background-color: var(--sand);
     border-radius: 2rem;
-    color: var(--deep-bark);
+    color: var(--brown);
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -56,10 +56,10 @@ li.nav-menu a {
 }
 
 li.nav-menu a:hover {
-    background-color: var(--tide-sand);
+    background-color: var(--sand-30);
 }
 
-li.nav-menu a:active {
-    background-color: var(--deep-berk-100);
-    color: var(--sage-sand);
+li.nav-menu.active a {
+    background-color: var(--brown) !important;
+    color: var(--ivory) !important;
 }
