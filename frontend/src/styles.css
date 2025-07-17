@@ -1,34 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --green: #98A931;             /* olive-green → green */
-    --dark-green: #2B3E1A;        /* dark-moss → dark-green */
-    --mint: #EFF6E8;              /* frosted-mint → mint */
-  
-    --sand: #b5b1a9;              /* sage-sand → sand */
-    --sand-30: #a39f98;         /* tide-sand → sand-dark */
-  
-    --forest: #5A691D;            /* forest-green → forest */
-    --lime: #D7E987;              /* light-lime → lime */
-  
-    --caramel: #D4AC70;           /* golden-caramel → caramel */
-    --ivory: #E2DDD3;             /* dusty-ivory → ivory */
-  
-    --brown: #371D14;              /* deep-bark → bark */
-    --brown-40: #73615b;          /* deep-berk-40 → brown-40 */
-    --brown-70: #c3bbb9;          /* deep-berk-70 → brown-70 */
-  }
-  
+  --green: #98a931; /* olive-green → green */
+  --dark-green: #2b3e1a; /* dark-moss → dark-green */
+  --mint: #eff6e8; /* frosted-mint → mint */
 
+  --sand: #b5b1a9; /* sage-sand → sand */
+  --sand-30: #a39f98; /* tide-sand → sand-dark */
 
+  --forest: #5a691d; /* forest-green → forest */
+  --lime: #d7e987; /* light-lime → lime */
+
+  --caramel: #d4ac70; /* golden-caramel → caramel */
+  --ivory: #e2ddd3; /* dusty-ivory → ivory */
+
+  --brown: #371d14; /* deep-bark → bark */
+  --brown-40: #73615b; /* deep-berk-40 → brown-40 */
+  --brown-70: #c3bbb9; /* deep-berk-70 → brown-70 */
+}
+
+@font-face {
+  font-family: 'Mochiy Pop One';
+  src: url('./assets/fonts/MochiyPopOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    font-family: Poppins, sans-serif !important;
-    /* overflow: hidden; */
-    background-color: var(--ivory);
+  margin: 0;
+  font-family: "Mochiy Pop One", sans-serif;
+  /* overflow: hidden; */
+  background-color: var(--ivory);
 }

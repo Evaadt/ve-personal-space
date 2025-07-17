@@ -11,13 +11,6 @@ import { ServerUtilsService } from '../../services/server-utils.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  isShrunk = false;
 
   constructor(public serverUtils: ServerUtilsService) { }
-  @HostListener('window:scroll', [])
-  onScroll() {
-    this.isShrunk = window.scrollY > 40;
-  }
-
-
 }
