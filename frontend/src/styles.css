@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --olive-green: #98A931;
+    --dark-moss: #2B3E1A;
+    --frosted-mint: #EFF6E8;
+
+    --sage-sand: #C4C5AF;
+    --forest-green: #5A691D;
+    --light-lime: #D7E987;
+
+    --golden-caramel: #D4AC70;
+    --dusty-ivory: #E2DDD3;
+    --deep-bark: #371D14;
+}
+
+
+body {
+    background-color: var(--dusty-ivory);
+}
