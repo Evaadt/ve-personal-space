@@ -1,21 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --green: #98a931; /* olive-green → green */
-  --dark-green: #2b3e1a; /* dark-moss → dark-green */
-  --mint: #eff6e8; /* frosted-mint → mint */
+  --green: #98a931;
+  /* olive-green → green */
+  --dark-green: #2b3e1a;
+  /* dark-moss → dark-green */
+  --mint: #eff6e8;
+  /* frosted-mint → mint */
 
-  --sand: #b5b1a9; /* sage-sand → sand */
-  --sand-30: #a39f98; /* tide-sand → sand-dark */
+  --sand: #b5b1a9;
+  /* sage-sand → sand */
+  --sand-30: #a39f98;
+  /* tide-sand → sand-dark */
 
-  --forest: #5a691d; /* forest-green → forest */
-  --lime: #d7e987; /* light-lime → lime */
+  --forest: #5a691d;
+  /* forest-green → forest */
+  --lime: #d7e987;
+  /* light-lime → lime */
 
-  --caramel: #d4ac70; /* golden-caramel → caramel */
-  --ivory: #e2ddd3; /* dusty-ivory → ivory */
+  --caramel: #d4ac70;
+  /* golden-caramel → caramel */
+  --ivory: #e2ddd3;
+  /* dusty-ivory → ivory */
 
-  --brown: #371d14; /* deep-bark → bark */
-  --brown-40: #73615b; /* deep-berk-40 → brown-40 */
-  --brown-70: #c3bbb9; /* deep-berk-70 → brown-70 */
+  --brown: #371d14;
+  /* deep-bark → bark */
+  --brown-40: #73615b;
+  /* deep-berk-40 → brown-40 */
+  --brown-70: #c3bbb9;
+  /* deep-berk-70 → brown-70 */
 }
 
 @font-face {
@@ -35,4 +47,45 @@ body {
   font-family: "Mochiy Pop One", sans-serif;
   /* overflow: hidden; */
   background-color: var(--ivory);
+}
+
+
+/****/
+
+.button-around {
+  color: var(--brown);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--ivory);
+  border-radius: 3rem;
+  padding: 0.6rem;
+  box-shadow: inset 0px 3px 3px -2px #3a2f1f;
+}
+
+
+.button-around span {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--sand);
+  border-radius: 2rem;
+  color: var(--brown);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.button-around:hover span {
+  background-color: var(--sand-30);
+}
+
+.button-around:active span {
+  background-color: var(--brown) !important;
+  color: var(--ivory) !important;
 }

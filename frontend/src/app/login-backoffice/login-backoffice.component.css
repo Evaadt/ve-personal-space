@@ -1,0 +1,59 @@
+.title-header,
+.title-input {
+  color: var(--brown);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--ivory);
+}
+
+.title-header {
+  top: -3.8rem;
+  left: 4.4rem;
+  font-size: 2.5rem;
+}
+
+.title-input {
+    -webkit-text-stroke-width: 1px;
+  top: -1rem;
+  left: 1rem;
+  font-size: 1.4rem;
+}
+
+.card-container {
+  background-color: var(--sand);
+  box-shadow: 0px 3px 4px 0px #3a2f1f99;
+  border-radius: 5rem;
+  width: 35rem;
+}
+
+button.button-around {
+  bottom: -2rem;
+  left: auto;
+  right: auto;
+}
+
+/**********************/
+.input-around {
+  color: var(--brown);
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--ivory);
+  border-radius: 1.3rem;
+  padding: 0.4rem;
+}
+
+.input-around input {
+  text-decoration: none;
+  border: none;
+  height: 3rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: var(--sand);
+  border-radius: 1rem;
+  color: var(--brown);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
