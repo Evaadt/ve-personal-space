@@ -1,7 +1,7 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { ServerUtilsService } from '../../services/server-utils.service';
+import { AppUtilsService } from '../../services/app-utils.service';
 
 @Component({
   selector: 'app-header',
@@ -12,5 +12,5 @@ import { ServerUtilsService } from '../../services/server-utils.service';
 })
 export class HeaderComponent {
 
-  constructor(public serverUtils: ServerUtilsService) { }
+  constructor(public appUtils: AppUtilsService) { }
 }

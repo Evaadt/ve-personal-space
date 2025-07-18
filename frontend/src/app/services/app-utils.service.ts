@@ -6,7 +6,7 @@ import { filter } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class ServerUtilsService {
+export class AppUtilsService {
   private router = inject(Router);
 
   /** Guarda a rota atual */
