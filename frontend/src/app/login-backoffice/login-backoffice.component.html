@@ -1,14 +1,28 @@
 <main class="w-full h-full flex flex-column justify-content-center align-items-center">
-    <form class="card-container h-30rem relative">
-        <h1 class="absolute title-header ">Login</h1>
-        <div action="" class="h-full w-full flex flex-column justify-content-between pt-8 p-4 ">
-            <div class="input-around relative">
-            <label class="absolute title-input ">Name:</label>
-                <input type="text" pInputText />
+    <form class="card-container h-26rem relative" [formGroup]="formLogin">
+        <h1 class="absolute title-header">Login</h1>
 
+        <div class="h-full w-full flex flex-column justify-content-center gap-5 pt-5 p-4">
+            <!-- Campo Nome -->
+            <div class="h-4rem w-full flex flex-column justify-content-start">
+                <p-floatlabel variant="on">
+                    <input id="username" type="text" pInputText class="login-input"  formControlName="userName" />
+                    <label class="login-input" for="username">Nome</label>
+                </p-floatlabel>
             </div>
+
+            <!-- Campo Senha -->
+            <div class="h-4rem w-full flex flex-column justify-content-start">
+                <p-floatlabel variant="on">
+                    <input id="password" type="password" pInputText class="login-input" formControlName="password" />
+                    <label class="login-input" for="password">Senha</label>
+                </p-floatlabel>
+            </div>
+
+            <a href=""> Esqueci minha senha</a>
         </div>
-        <button class="button-around absolute  ">
+
+        <button class="button-around absolute" (click)="onSubmit()">
             <span class="flex align-items-center">Entrar</span>
         </button>
     </form>

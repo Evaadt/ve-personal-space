@@ -11,7 +11,5 @@ import { CommonModule } from '@angular/common';
 export class ContentCardComponent {
   @Input() title!: string;
   @Input() text!: string;
-  @Input() imageUrl?: string;
-  @Input() imageAlt: string = '';
-  @Input() reverse: boolean = false; // se true, imagem vem antes
+  @Input() styleClass: string = '';
 }

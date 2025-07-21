@@ -1,19 +1,17 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { AppUtilsService } from '../../services/app-utils.service';
 import { MenuItem } from 'primeng/api';
-
+import { AppUtilsService } from '../../services/app-utils.service';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-sidebar-backoffice',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  templateUrl: './sidebar-backoffice.component.html',
+  styleUrl: './sidebar-backoffice.component.css'
 })
-export class HeaderComponent {
-  constructor(public appUtils: AppUtilsService) {}
+export class SidebarBackofficeComponent implements OnInit {
 
   menuItems: MenuItem[] = [
     { routerLink: '/', label: 'Home', icon: 'fa fa-home' },
@@ -22,4 +20,10 @@ export class HeaderComponent {
     { routerLink: '/projetos', label: 'Projetos', icon: 'fa fa-trophy' },
     { routerLink: '/sobre', label: 'Quem é Ve!?', icon: 'fa fa-leaf' }
   ];
+
+  constructor(public appUtils: AppUtilsService) { }
+
+  ngOnInit(): void {
+  }
+
 }

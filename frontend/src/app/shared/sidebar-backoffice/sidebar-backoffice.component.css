@@ -1,9 +1,8 @@
-
-
-.nav-wrapper {
+nav.nav-wrapper {
     background-color: var(--sand);
-    border-radius: 0 5rem 5rem 0;
-    box-shadow: -1px 3px 3px -3px #3a2f1f;
+    border-radius: 5rem;
+    box-shadow: 3px 0px 3px -3px #3a2f1f;
+    height: 80%;
 }
 
 .nav-wrapper ul {
@@ -11,8 +10,7 @@
     justify-content: center;
     position: absolute;
     gap: .5rem;
-    bottom: -2.5rem;
-    right: 3rem;
+    top: 20%;
 
 }
 
@@ -51,6 +49,6 @@ li.nav-menu.active a {
     color: var(--ivory) !important;
 }
 
-li.nav-menu:hover a.h3.text-base.m-0.hidden.md\:block{
-    display:block;
+li.nav-menu:hover a.h3.text-base.m-0.hidden.md\:block {
+    display: block;
 }

@@ -28,6 +28,8 @@
   /* deep-berk-40 → brown-40 */
   --brown-70: #c3bbb9;
   /* deep-berk-70 → brown-70 */
+
+
 }
 
 @font-face {
@@ -49,6 +51,21 @@ body {
   background-color: var(--ivory);
 }
 
+a {
+  text-decoration: none;
+  color: var(--brown);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--lime);
+}
+
+a:active {
+  text-decoration: underline;
+  color: var(--brown-40);
+}
+
 
 /****/
 
@@ -68,7 +85,8 @@ body {
 }
 
 
-.button-around span {
+.button-around span,
+.button-around a {
   text-decoration: none;
   padding: 0.5rem 1rem;
   background-color: var(--sand);
@@ -79,13 +97,66 @@ body {
   align-items: center;
   gap: 0.5rem;
   transition: all 0.2s ease;
+  box-shadow: 0px 3px 3px -2px #3a2f1f;
 }
 
-.button-around:hover span {
+.button-around:hover span,
+.button-around:hover a {
   background-color: var(--sand-30);
 }
 
-.button-around:active span {
+.button-around:active span,
+.button-around.active a {
   background-color: var(--brown) !important;
   color: var(--ivory) !important;
 }
+
+/*******************/
+
+.p-inputtext.login-input {
+  font-size: 1rem !important;
+  color: var(--brown) !important;
+  background: var(--sand) !important;
+  border: .4rem solid var(--ivory) !important;
+  box-shadow: none;
+  border-radius: 1.2rem;
+  width: 100%;
+}
+
+.p-floatlabel label.login-input {
+  color: var(--brown) !important;
+  -webkit-text-stroke-width: .1rem;
+  -webkit-text-stroke-color: var(--ivory);
+  font-size: 1.2rem;
+}
+
+.p-inputtext:enabled:focus {
+  border-color: var(--ivory) !important;
+  box-shadow: none !important;
+  outline: none;
+  outline-offset: none;
+}
+
+input:-internal-autofill-selected .login-input {
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: -internal-light-dark(rgb(232, 240, 254), hsl(38, 6%, 62%)) !important;
+  color: fieldtext !important;
+}
+
+.p-floatlabel-on:has(input:focus) label,
+.p-floatlabel-on:has(input.p-filled) label,
+.p-floatlabel-on:has(input:-webkit-autofill) label,
+.p-floatlabel-on:has(textarea:focus) label,
+.p-floatlabel-on:has(textarea.p-filled) label,
+.p-floatlabel-on:has(.p-inputwrapper-focus) label,
+.p-floatlabel-on:has(.p-inputwrapper-filled) label {
+  background: transparent !important;
+  color: var(--brown) !important;
+  -webkit-text-stroke-width: .1rem !important;
+  -webkit-text-stroke-color: var(--ivory) !important;
+  font-size: 1.5rem !important;
+}
+
+/*********************/
+

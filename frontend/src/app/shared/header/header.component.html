@@ -1,21 +1,10 @@
-<div class="nav-wrapper">
-  <nav class="relative flex flex-column">
-    <ul>
-      <li class="nav-menu" [class.active]="appUtils.isRoute('/')">
-        <a routerLink="/"><i class="fa fa-home"></i> Home</a>
-      </li>
-      <li class="nav-menu" [class.active]="appUtils.isRoute('/aulas')">
-        <a routerLink="/aulas"><i class="fa fa-yin-yang"></i> Yoga</a>
-      </li>
-      <li class="nav-menu" [class.active]="appUtils.isRoute('/publicacoes')">
-        <a routerLink="/publicacoes"><i class="fa fa-book"></i> Publicações</a>
-      </li>
-      <li class="nav-menu" [class.active]="appUtils.isRoute('/projetos')">
-        <a routerLink="/projetos"><i class="fa fa-trophy"></i> Projetos</a>
-      </li>
-      <li class="nav-menu" [class.active]="appUtils.isRoute('/sobre')">
-        <a routerLink="/sobre"><i class="fa fa-leaf"></i> Quem é Ve!?</a>
-      </li>
-    </ul>
-  </nav>
-</div>
+<nav class="nav-wrapper h-5rem w-11 relative">
+  <ul class="flex flex-row justify-content-center align-items-center absolute gap-1">
+    <li *ngFor="let item of menuItems" class="button-around" [class.active]="appUtils.isRoute(item.routerLink)">
+      <a [routerLink]="item.routerLink">
+        <i [class]="item.icon"></i>
+        <h3 class="text-base m-0 hidden md:block"> {{ item.label }}</h3>
+      </a>
+    </li>
+  </ul>
+</nav>

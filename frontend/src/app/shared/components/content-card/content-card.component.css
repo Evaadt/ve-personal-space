@@ -1,0 +1,26 @@
+.card-container.border,
+.card-container.fill {
+  border-radius: 2rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+  border: 1px solid var(--sand);
+  color: var(--brown);
+}
+
+.card-container.border {
+  background-color: var(--ivory);
+}
+
+.card-container.fill {
+  background-color: var(--sand);
+}
+
+.card-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: var(--brown);
+  -webkit-text-stroke-width: .1rem;
+  -webkit-text-stroke-color: var(--ivory);
+  top: -4.5rem;
+}

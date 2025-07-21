@@ -54,12 +54,3 @@ ve-personal-blog/
 ├── README.md
 └── CONTRIBUTING.md
 ```
-
----
-
-## 📌 Notas finais
-
-* Escreve commits em **português ou inglês**, mas sempre com clareza e foco no **porquê da mudança**.
-* Sempre faz `pull` da `main` antes de criar novas features.
-* Cria branches com nomes descritivos:
-  `feature/home-layout`, `fix/menu-scroll`, `style/header-icons`

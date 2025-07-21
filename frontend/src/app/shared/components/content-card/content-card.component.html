@@ -1,0 +1,6 @@
+<div class="card-container" [class]="styleClass">
+  <div class="card-text relative">
+    <h2 class="absolute w-full " *ngIf="title != ''">{{ title }}</h2>
+    <ng-content select=".text-content"></ng-content>
+  </div>
+</div>
