@@ -1,0 +1,10 @@
+<nav class="nav-wrapper h-5rem w-11 relative">
+  <ul class="flex flex-row justify-content-center align-items-center absolute gap-1">
+    <li *ngFor="let item of menuItems" class="button-around" [class.active]="appUtils.isRoute(item.routerLink)">
+      <a [routerLink]="item.routerLink">
+        <i [class]="item.icon"></i>
+        <h3 class="text-base m-0 hidden md:block"> {{ item.label }}</h3>
+      </a>
+    </li>
+  </ul>
+</nav>

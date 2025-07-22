@@ -1,0 +1,68 @@
+/*********INPUTS*************/
+.title-header,
+.title-input {
+  color: var(--brown);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--ivory);
+}
+
+.title-header {
+  top: -3.8rem;
+  left: 4.4rem;
+  font-size: 2.5rem;
+}
+
+.title-input {
+  -webkit-text-stroke-width: 2px;
+  top: -1.3rem;
+  left: 1rem;
+  font-size: 1.5rem;
+}
+
+.input-around {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  color: var(--brown);
+  background-color: var(--ivory);
+  border-radius: 1.3rem;
+  padding: 0.4rem;
+}
+
+.input-around input {
+  border: none;
+  height: 3rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: var(--sand);
+  border-radius: 1rem;
+  color: var(--brown);
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+/**********************/
+/* Mensagem de erro */
+.error-message {
+  font-size: 0.875rem;
+  color: #d33;
+  padding: 0.3rem 1rem 0 1rem;
+  font-weight: 500;
+}
+
+/**********************/
+
+.card-container {
+  background-color: var(--sand);
+  box-shadow: 0px 3px 4px 0px #3a2f1f99;
+  border-radius: 5rem;
+  width: 35rem;
+}
+
+button.button-around {
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}

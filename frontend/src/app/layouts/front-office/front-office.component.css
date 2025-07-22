@@ -1,0 +1,23 @@
+main.main-content {
+    padding: 2rem;
+    padding-top: 12rem;
+    min-height: 80vh;
+}
+
+header.header-content {
+    background: linear-gradient(180deg, var(--ivory) 60%, transparent 78%);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+
+header {
+    padding: 1.5rem;
+    padding-left: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

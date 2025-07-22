@@ -1,0 +1,16 @@
+<div class="flex h-full w-full overflow-hidden">
+
+    <!-- Sidebar (visível exceto na rota de login) -->
+    <ng-container *ngIf="!appUtils.isRoute('/back-office/login')">
+      <aside class="w-10rem h-full flex align-items-center">
+        <app-sidebar-backoffice></app-sidebar-backoffice>
+      </aside>
+    </ng-container>
+  
+    <!-- Conteúdo principal -->
+    <main class="flex-1 h-full overflow-y-auto bg-[var(--ivory)]">
+      <router-outlet></router-outlet>
+    </main>
+  
+  </div>
+  
