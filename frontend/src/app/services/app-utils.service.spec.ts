@@ -1,5 +1,4 @@
 import { TestBed } from '@angular/core/testing';
-
 import { AppUtilsService } from './app-utils.service';
 
 describe('AppUtilsService', () => {
