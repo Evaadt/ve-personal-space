@@ -20,7 +20,7 @@ cd ..
 
 echo "🚀 Iniciando frontend..."
 cd "$FRONTEND_DIR" || { echo "Erro: Diretório do frontend não encontrado."; exit 1; }
-ng serve --port 4200 &
+ng serve --port 4201 &
 FRONT_PID=$!
 cd ..
 

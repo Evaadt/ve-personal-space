@@ -59,7 +59,32 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
-            }
+            },
+            "stanid": { 
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.stanid.ts"
+                }
+              ],
+              "optimization": true, 
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ]
+            } 
           },
           "defaultConfiguration": "production"
         },
@@ -71,6 +96,9 @@
             },
             "development": {
               "buildTarget": "frontend:build:development"
+            },
+            "stanid": {
+             "buildTarget": "frontend:build:stanid"
             }
           },
           "defaultConfiguration": "development"

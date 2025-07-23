@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\RoleController; 
 use App\Http\Controllers\UserController; 
+use App\Http\Controllers\AuthController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -22,9 +24,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// Rotas para Roles
-Route::get('/roles', [RoleController::class, 'index']);
+// Rotas de Autenticação (públicas)
+Route::post('/login', [AuthController::class, 'login']);
 
-// Rotas para Users
-Route::get('/users', [UserController::class, 'index']);
-
+// Rotas protegidas por autenticação (exigem token)
+Route::middleware('auth:sanctum')->group(function () {
+    Route::post('/logout', [AuthController::class, 'logout']); // Mover para dentro do middleware
+    Route::get('/roles', [RoleController::class, 'index']);
+    Route::get('/users', [UserController::class, 'index']);
+    // Adicione aqui outras rotas que exigem autenticação
+});
